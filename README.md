@@ -4,15 +4,15 @@ This code contains a portable demo of our CCMLE algorithm [1] for obtaining maxi
 
 ## Demo
 
-We run CCMLE with a relative change bound of 0.01 on signal of 5000 samples constructed by the sum of two sinusoids, subject to zero-mean Gaussian noise with a standard deviation of 3. The results can be seen in the figure below.
+We run CCMLE with a relative change bound of 0.01 on a signal of 5000 samples constructed by the sum of two sinusoids, subject to zero-mean Gaussian noise with a standard deviation of 3. The results can be seen in the figure below.
 
 ![res.png](res.png)
 
-For the noisy signal, the computed deviation was 3.05, whereas after CCMLE, the resulting signal had a computed standard deviation of 0.38.
+For the noisy signal, the computed standard deviation was 3.05, whereas after CCMLE, the resulting signal had a computed standard deviation of 0.38.
 
 ## Dependencies
 
-This could should run both in Python 2 and 3, although only Python 3 has been verified to run. In addition, the following dependencies are required:
+This code should run both in Python 2 and 3, although only Python 3 has been verified to run successfully. In addition, the following dependencies are required:
 
 - [`numpy`](https://numpy.org/)
 - [`cvxpy`](https://www.cvxpy.org/)
